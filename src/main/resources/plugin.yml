@@ -1,0 +1,5 @@
+name: OriginXWhitelist
+version: '1.0.0'
+main: cc.originx.lrd1122.OriginXWhitelist
+api-version: '1.20'
+authors: [ lrd1122 ]
