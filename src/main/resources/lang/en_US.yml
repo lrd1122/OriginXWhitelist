@@ -1,0 +1,136 @@
+messages:
+  command:
+    player-only: "&cThis command can only be used by players!"
+    no-permission: "&cYou don't have permission to use this command!"
+    usage: "&cUsage: /whitelist <add/remove/list> [type] [value]"
+  whitelist:
+    added: "&aSuccessfully added &f{0} &ato whitelist!"
+    removed: "&aSuccessfully removed &f{0} &afrom whitelist!"
+    already-added: "&cThis player is already whitelisted!"
+    not-found: "&cThis player is not in the whitelist!"
+    empty: "&cWhitelist is empty!"
+    list-header: "&6=== Whitelist ==="
+    list-format: "&7- &f{0}"
+  kick:
+    not-whitelisted: "&cYou are not whitelisted!\n&7Please contact server administrators."
+    ip-blocked: "&cYour IP is temporarily blocked!\n&7Please try again in {0} seconds."
+
+menu:
+  command:
+    help:
+      title: "=== Whitelist Command Help ==="
+      add: "/whitelist add <type> <value> - Add to whitelist"
+      remove: "/whitelist remove <type> <value> - Remove from whitelist"
+      list: "/whitelist list [type] - View whitelist"
+      menu: "/whitelist menu - Open whitelist menu"
+      types: "Types: name, ip, uuid"
+    usage:
+      add: "Usage: /whitelist add <type> <value>"
+      remove: "Usage: /whitelist remove <type> <value>"
+      types: "Types: name, ip, uuid"
+    add:
+      name: "Added player name: {0}"
+      ip: "Added IP: {0}"
+      uuid: "Added UUID: {0}"
+      invalid-uuid: "Invalid UUID format!"
+      invalid-type: "Invalid type! Available: name, ip, uuid"
+    remove:
+      name: "Removed player name: {0}"
+      ip: "Removed IP: {0}"
+      uuid: "Removed UUID: {0}"
+    list:
+      name-header: "Player Name Whitelist:"
+      ip-header: "IP Whitelist:"
+      uuid-header: "UUID Whitelist:"
+
+  main:
+    title: "Whitelist Management"
+    language:
+      title: "&aLanguage Settings"
+      current: "&7Current Language: {0}"
+      click-change: "&fClick to switch language"
+      available: "&7Available languages: {0}"
+      enter-choice: "§aEnter language code to switch:"
+      option: "§f- {0}"
+      changed: "§aLanguage changed to: §f{0}"
+      invalid: "§cInvalid language code!"
+    security:
+      title: "&cAnti-DDoS Settings"
+      attempts: "&7Max Attempts: &f{0}"
+      duration: "&7Ban Duration: &f{0}s"
+    ip:
+      title: "&aIP Whitelist"
+    uuid:
+      title: "&aUUID Whitelist"
+    status:
+      enabled: "&aEnabled"
+      disabled: "&cDisabled"
+    click-toggle: "&fClick to toggle"
+    list:
+      title: "&eWhitelist"
+      count: "&7Current Entries: &f{0}"
+      click-manage: "&fClick to manage whitelist"
+
+  security:
+    title: "§cAnti-DDoS Settings"
+    click-edit: "&fClick to edit"
+    save-success: "§aSettings saved!"
+    invalid-number: "§cPlease enter a valid number!"
+    attempts:
+      title: "&aMax Login Attempts"
+      current: "&7Current: &f{0}"
+      description: "&7Exceed this will result in temporary ban"
+      enter-new: "§aEnter new max attempts:"
+      must-positive: "§cNumber must be greater than 0!"
+    duration:
+      title: "&aBan Duration"
+      current: "&7Current: &f{0} seconds"
+      description: "&7Ban duration when exceeding max attempts"
+      enter-new: "§aEnter new ban duration (seconds):"
+      must-positive: "§cDuration must be greater than 0!"
+    clear:
+      title: "&cClear Bans"
+      description: "&7Click to clear all temporary bans"
+      success: "§aAll temporary bans cleared!"
+
+  whitelist:
+    title: "Whitelist"
+    back:
+      title: "&cBack to Main Menu"
+      lore: "&7Click to return"
+    add:
+      title: "&aAdd to Whitelist"
+      lore: "&7Click to add new entry"
+      select-type: "§aSelect type (enter number):"
+      type:
+        name: "§f1. Player Name"
+        ip: "§f2. IP Address"
+        uuid: "§f3. UUID"
+      enter-name: "§aEnter player name:"
+      enter-ip: "§aEnter IP address:"
+      enter-uuid: "§aEnter UUID:"
+      name-exists: "§cPlayer already whitelisted!"
+      ip-exists: "§cIP already whitelisted!"
+      uuid-exists: "§cUUID already whitelisted!"
+      name-success: "§aSuccessfully added player §f{0} §ato whitelist!"
+      ip-success: "§aSuccessfully added IP §f{0} §ato whitelist!"
+      uuid-success: "§aSuccessfully added UUID §f{0} §ato whitelist!"
+      invalid-uuid: "§cInvalid UUID format!"
+      invalid-type: "§cInvalid option!"
+    page-info: "&7Page: {0}/{1}"
+    prev-page: "&aPrevious Page"
+    next-page: "&aNext Page"
+    entry:
+      name: "&a{0}"
+      type: "&7Type: {0}"
+      value: "&7Value: {0}"
+    type:
+      name: "Player Name"
+      ip: "IP Address"
+      uuid: "UUID"
+    remove-success: "§aSuccessfully removed §f{0} §afrom whitelist!"
+
+  common:
+    back:
+      title: "&cBack to Main Menu"
+      lore: "&7Click to return"

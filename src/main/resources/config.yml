@@ -1,0 +1,16 @@
+# 语言设置 (zh_CN, en_US)
+language: "zh_CN"
+
+# 安全设置
+security:
+  # 最大登录尝试次数
+  max-login-attempts: 5
+  # 封禁时长(秒)
+  block-duration: 3600
+
+# 白名单设置
+whitelist:
+  # 是否启用IP白名单
+  enable-ip: true
+  # 是否启用UUID白名单
+  enable-uuid: true
